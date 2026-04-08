@@ -1,0 +1,256 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+html{
+
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #F9F9F9;
+    font-family: 'Outfit', sans-serif;
+    color: #ffff;
+}
+
+header {
+     background-color: #F7F217;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     color: black;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: 999;
+}
+
+header h2{
+  
+   margin-left: 60px;
+}
+
+header a{
+     text-decoration: none;
+     margin-left: 40px;
+     color: black;
+     font-size: 1.1rem;
+     font-weight: 400;
+}
+
+
+header .add_article{
+    padding: 0.4rem 30px;
+    background-color: transparent;
+    border: 2px solid black;
+    font-weight: 500;
+    border-radius: 40px;
+    margin-right: 70px;
+}
+
+
+main{
+    background-color: #121212;
+    border-bottom-right-radius: 332px;
+}
+
+.home_tasks {
+    padding-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_tasks {
+    text-align: center;
+}
+
+
+.home_tasks div p {
+    border-radius: 20px;
+    color: #ffffff9a;
+}
+
+
+.home_tasks div h1{
+    font-size: 70px;
+    margin-top: -10px;
+}
+
+.home_tasks div h1 span,
+.home_tasks div h2 span{
+  color: #F7F217;
+}
+
+
+
+.image_tasks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.image{
+     position: relative;
+}
+
+.image img {
+    width: 340px;
+    /* height: 300px; */
+    position: absolute;
+    left: 20%;
+
+    object-fit: cover;
+}
+
+.back{
+   padding:5.2rem 62px ;
+  
+   width: 60%;
+
+   position: absolute;
+   border-bottom-right-radius: 332px;
+   top: 63.5%;
+}
+
+
+.content{
+    margin-top: -13%;
+    max-width: 300px;
+}
+
+.content h1{
+    font-size: 4rem;
+    margin-bottom: -10px;
+}
+
+.content h2{
+    font-size: 1.5rem;
+    margin: 0;
+    border: 1px solid #ffff;
+    width: fit-content;
+    padding: 0.5rem 40px;
+    border-radius: 40px;
+}
+
+.content h2 i{
+    color: #F7F217;
+}
+
+.content p{
+     color: #ffffffe2;
+}
+
+.content  button{
+    padding: 0.5rem 30px;
+    background-color: #F7F217;
+    color: #121212;
+    font-weight: 600;
+    border-radius: 40px;
+    border: 1px solid #ffff;
+    box-shadow: 10px 10px 0 #ffff;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.woman_content{
+   display: flex;
+   align-items: center;
+
+   gap: 20px;
+   margin-top: -10px;
+}
+
+.woman_content p{
+   margin-top: -10px;
+}
+.woman_content img{
+  width: 50px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: #fffb00;
+}
+
+
+
+
+/* sss */
+/* grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 50px;
+}
+
+/* card */
+.card {
+    background: #fff;
+    border-left: 4px solid #F7F217;
+    border-radius: 20px;
+    transition: 0.3s;
+  
+}
+
+/* hover */
+.card:hover {
+    transform: translateY(-8px);
+}
+
+
+
+/* content */
+.card-content {
+    padding: 20px;
+  
+}
+
+/* title */
+.card-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #121212;
+}
+
+/* text */
+.card-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* buttons container */
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* buttons */
+.btn {
+    padding: 8px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* edit */
+.edit {
+    background: #ffd60a;
+    color: #000;
+}
+
+/* delete */
+.delete {
+    background: #ff4d4d;
+    color: #fff;
+}
+
+/* hover */
+.btn:hover {
+    opacity: 0.8;
+}
