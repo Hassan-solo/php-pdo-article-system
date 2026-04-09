@@ -1,5 +1,7 @@
 
 
+
+
 /* Styling l-body */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
@@ -9,15 +11,21 @@ body {
     margin: 0;
 }
 
+:root{
+    --color1:#1a1a1af2;
+    --color2:#121212;
+    --color3:#ff6B6B;
+    --color4:#e0e0e0;
+}
 
 
 
 header {
-     background-color: #F7F217;
+     background-color: var(--color3);
      display: flex;
      align-items: center;
      justify-content: space-between;
-     color: black;
+     color: #ffffff;
      position: fixed;
      top: 0;
      width: 100%;
@@ -32,63 +40,39 @@ header h2{
 header a{
      text-decoration: none;
      margin-left: 40px;
-     color: black;
+     color: rgb(255, 255, 255);
      font-size: 1.1rem;
-     font-weight: 400;
+     font-weight: 500;
 }
 
 
 header .add_article{
     padding: 0.4rem 30px;
     background-color: transparent;
-    border: 2px solid black;
+    border: 2px solid #ffffff;
     font-weight: 500;
     border-radius: 40px;
     margin-right: 70px;
 }
 
 .os{
-
+    margin-top: 40px;
     display: flex;
-    margin-left: -120px;
+   
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 
 }
 
-
-.image{
-     position: relative;
-}
-
-.image img {
-    width: 340px;
-    /* height: 300px; */
-    position: absolute;
-    left: 20%;
-
-    object-fit: cover;
-}
-
-
-
-
-/* Titre "Edit Article" */
-h1 {
-    color: #333;
-    margin-bottom: 20px;
-    font-weight: 600;
-}
-
 /* Container dyal l-form */
 form {
-    background: #ffffff;
+    /* background: #ffffff; */
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
     width: 100%;
-    max-width: 450px;
+    max-width: 500px;
 }
 
 /* Styling l-inputs w textarea */
@@ -97,7 +81,7 @@ textarea {
     width: 100%;
     padding: 12px 15px;
     margin-bottom: 20px;
-    border: 2px solid #eee;
+    border: 2px solid var(--color3);
     border-radius: 8px;
     font-size: 15px;
     transition: all 0.3s ease;
@@ -120,19 +104,20 @@ textarea {
 /* Styling l-button "Update" */
 button[type="submit"] {
     width: 100%;
-    background-color: #28a745; /* Loun khdar f l-update dima hsan */
-    color: white;
+    background-color:var(--color3); /* Loun khdar f l-update dima hsan */
+    color: #ffffff;
     padding: 14px;
     border: none;
     border-radius: 8px;
     font-size: 16px;
     font-weight: 600;
+    border-left: 3px solid white;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 button[type="submit"]:hover {
-    background-color: #218838;
+    background-color: #ff6b6bc7;
     transform: translateY(-1px); /* Wahd l-effet sghir dyal t-tle3 */
 }
 

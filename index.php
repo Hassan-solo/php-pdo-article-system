@@ -31,7 +31,7 @@ $articles = $article->readAll();
         <h2>B-Pfe</h2>
         <nav>
             <a href="#home">Home</a>
-            <a href="#task">Article</a>
+            <a href="#article">Article</a>
              <a href="create.php" class="add_article">Add Article</a>
         </nav>
        
@@ -102,7 +102,7 @@ $articles = $article->readAll();
 
     </main>
 
-    <div class="grid-container">
+    <div class="grid-container" id="article">
 
         <?php foreach ($articles as $art): ?>
 
