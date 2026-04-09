@@ -32,17 +32,17 @@ $articles = $article->readAll();
         <nav>
             <a href="#home">Home</a>
             <a href="#article">Article</a>
-             <a href="create.php" class="add_article">Add Article</a>
+            <a href="create.php" class="add_article">Add Article</a>
         </nav>
-       
+
     </header>
 
     <main id="home">
         <section class="home_tasks">
             <div>
                 <p>#1ranked in the market</p>
-                <h2>With Courser <span>Learn</span> the most</h2>
-                <h1>demanded <span>Skills</span>
+                <h2>Manage your <span>content</span> easily</h2>
+                <h1>Article <span>Manager</span></h1>
                 </h1>
             </div>
         </section>
@@ -51,8 +51,9 @@ $articles = $article->readAll();
             <div class="image_tasks">
                 <div class="content">
                     <h1>“</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit iste ea voluptates debitis vitae dolore!</p>
-                    <button>Sign in</button>
+                    <p> A simple back office to manage your blog posts.
+                        Create, edit, and delete articles</p>
+                    <button>Add Article</button>
                 </div>
 
 
@@ -84,13 +85,14 @@ $articles = $article->readAll();
 
                 <div class="content">
                     <div class="content-position">
-                        <h2> <i class="fa-solid fa-star"></i>4.5/5</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet enim nulla eligendi, exercitationem ex sapiente?</p>
+                        <h2> <i class="fa-solid fa-star"></i>4.6</h2>
+                        <p>This application allows admins to manage blog content
+                            using a secure PHP OOP architecture.</p>
                     </div>
                     <div class="woman_content">
                         <div>
-                            <h3>Carolina Abott</h3>
-                            <p>Business owner</p>
+                            <h3>Admin Panel</h3>
+                            <p>PHP & MySQ</p>
                         </div>
                         <img src="images/woman.png" alt="woman">
                     </div>

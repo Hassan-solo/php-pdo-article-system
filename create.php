@@ -11,13 +11,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         $article = new Article();
         $article->createArticle($title, $content);
-         
+
         header("Location: index.php");
         exit();
-        
     }
-
-    
 }
 
 ?>
@@ -36,31 +33,31 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
 
-        <header>
+    <header>
         <h2>B-Pfe</h2>
         <nav>
             <a href="index.php">Home</a>
             <a href="#task">Article</a>
-             <a href="create.php" class="add_article">Add Article</a>
+            <a href="create.php" class="add_article">Add Article</a>
         </nav>
-       
+
     </header>
 
 
 
-   <div class="os">
-      <form method="POST" action="">
+    <div class="os">
+        <form method="POST" action="">
 
-        <input type="text" name="title" placeholder="Title" required>
-        <br><br>
+            <input type="text" name="title" placeholder="Title" required>
+            <br><br>
 
-        <textarea name="content" placeholder="Content" required></textarea>
-        <br><br>
+            <textarea name="content" placeholder="Content" required></textarea>
+            <br><br>
 
-        <button type="submit" name="add">Add Article</button>
-    </form>
+            <button type="submit" name="add">Add Article</button>
+        </form>
 
-   </div>
+    </div>
 
 </body>
 

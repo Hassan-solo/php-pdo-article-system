@@ -27,38 +27,41 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Edit</title>
     <link rel="stylesheet" href="css/update.css">
 </head>
+
 <body>
 
-   <header>
+    <header>
         <h2>B-Pfe</h2>
         <nav>
             <a href="index.php">Home</a>
             <a href="#task">Article</a>
-             <a href="create.php" class="add_article">Add Article</a>
+            <a href="create.php" class="add_article">Add Article</a>
         </nav>
-       
+
     </header>
 
-<div class="os">
-   
-  <form method="POST">
+    <div class="os">
 
-    <input type="hidden" name="id" value="<?php echo $art['id']; ?>">
+        <form method="POST">
 
-    <input type="text" name="title" value="<?php echo htmlspecialchars($art['title']); ?>" required>
-    <br><br>
+            <input type="hidden" name="id" value="<?php echo $art['id']; ?>">
 
-    <textarea name="content" required><?php echo htmlspecialchars($art['content']); ?></textarea>
-    <br><br>
+            <input type="text" name="title" value="<?php echo htmlspecialchars($art['title']); ?>" required>
+            <br><br>
 
-    <button type="submit">Update</button>
+            <textarea name="content" required><?php echo htmlspecialchars($art['content']); ?></textarea>
+            <br><br>
 
-  </form>
-</div>
+            <button type="submit">Update</button>
+
+        </form>
+    </div>
 
 </body>
+
 </html>

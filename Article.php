@@ -68,7 +68,7 @@ class Article
         ]);
     }
 
-
+    // get by id 
     public function getById($id)
     {
         $sql = "SELECT * FROM articles WHERE id = :id";
