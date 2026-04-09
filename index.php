@@ -110,7 +110,7 @@ $articles = $article->readAll();
 
             <div class="card">
 
-
+                <img src="uploads/<?= htmlspecialchars($art['image']) ?>" alt="image">
                 <div class="card-content">
 
                     <h3>📚<?= htmlspecialchars($art['title']) ?></h3>
@@ -140,7 +140,7 @@ $articles = $article->readAll();
     </div>
 
 
-    ?>
+
 
     </div>
 

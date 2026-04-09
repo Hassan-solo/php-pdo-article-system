@@ -9,13 +9,24 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $title = $_POST['title'];
         $content = $_POST['content'];
 
-        $article = new Article();
-        $article->createArticle($title, $content);
+        // image upload
+        // image upload
+        $imageName = $_FILES['image']['name'];
+        $tmpName = $_FILES['image']['tmp_name'];
 
-        header("Location: index.php");
-        exit();
+        $path = "uploads/" . $imageName;
+
+        move_uploaded_file($tmpName, $path);
     }
+
+
+    $article = new Article();
+    $article->createArticle($title, $content, $imageName);
+
+    header("Location: index.php");
+    exit();
 }
+
 
 ?>
 
@@ -45,12 +56,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
     <div class="os">
-        <form method="POST" action="">
+        <form method="POST" action="" enctype="multipart/form-data">
 
             <input type="text" name="title" placeholder="Title" required>
             <br><br>
 
             <textarea name="content" placeholder="Content" required></textarea>
+            <br><br>
+
+            <input type="file" name="image" required>
             <br><br>
 
             <button type="submit" name="add">Add Article</button>
