@@ -41,9 +41,9 @@ class Article
         ]);
     }
 
-    public function Update($id, $title, $content, $created_at)
+    public function Update($id, $title, $content, $created_at , $image)
     {
-        $sql = "UPDATE articles set title=:title , content=:content , created_at=:created_at Where id=:id";
+        $sql = "UPDATE articles set title=:title , content=:content , created_at=:created_at , image=:image Where id=:id";
 
         $stmt = $this->conn->prepare($sql);
 
@@ -52,7 +52,8 @@ class Article
             "id" => $id,
             "title" => $title,
             "content" => $content,
-            "created_at" => $created_at
+            "created_at" => $created_at,
+            "image"=>$image
 
         ]);
     }

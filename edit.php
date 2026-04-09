@@ -18,7 +18,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $content = $_POST['content'];
     $created_at = date("Y-m-d H:i:s");
 
-    $article->Update($id, $title, $content, $created_at);
+    $imageName = $_FILES['image']['name'];
+    $tmpName = $_FILES['image']['tmp_name'];
+
+    $path = "uploads/" . $imageName;
+
+    move_uploaded_file($tmpName, $path);
+
+    $article->Update($id, $title, $content, $created_at, $imageName);
 
     header("Location: index.php");
     exit;
@@ -47,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     <div class="os">
 
-        <form method="POST">
+        <form method="POST"  enctype="multipart/form-data">
 
             <input type="hidden" name="id" value="<?php echo $art['id']; ?>">
 
@@ -55,6 +62,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <br><br>
 
             <textarea name="content" required><?php echo htmlspecialchars($art['content']); ?></textarea>
+            <br><br>
+
+            <input type="file" name="image">
             <br><br>
 
             <button type="submit">Update</button>
