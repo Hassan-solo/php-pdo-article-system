@@ -11,9 +11,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         $article = new Article();
         $article->createArticle($title, $content);
-
-        echo "Article added successfully";
+         
+        header("Location: index.php");
+        exit();
+        
     }
+
+    
 }
 
 ?>
@@ -25,13 +29,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/create.css">
 </head>
 
 <body>
 
 
-    <form method="POST" action="">
+   <div>
+      <form method="POST" action="">
 
         <input type="text" name="title" placeholder="Title" required>
         <br><br>
@@ -42,8 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <button type="submit" name="add">Add Article</button>
     </form>
 
-    <a href="index.php">result</a>
-
+   </div>
 
 </body>
 

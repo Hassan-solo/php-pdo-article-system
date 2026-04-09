@@ -1,0 +1,145 @@
+
+
+/* Styling l-body */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #000000;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+
+header {
+     background-color: #F7F217;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     color: black;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: 999;
+}
+
+header h2{
+  
+   margin-left: 60px;
+}
+
+header a{
+     text-decoration: none;
+     margin-left: 40px;
+     color: black;
+     font-size: 1.1rem;
+     font-weight: 400;
+}
+
+
+header .add_article{
+    padding: 0.4rem 30px;
+    background-color: transparent;
+    border: 2px solid black;
+    font-weight: 500;
+    border-radius: 40px;
+    margin-right: 70px;
+}
+
+.os{
+
+    display: flex;
+    margin-left: -120px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+
+.image{
+     position: relative;
+}
+
+.image img {
+    width: 340px;
+    /* height: 300px; */
+    position: absolute;
+    left: 20%;
+
+    object-fit: cover;
+}
+
+
+
+
+/* Titre "Edit Article" */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Container dyal l-form */
+form {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Styling l-inputs w textarea */
+input[type="text"], 
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Ila derti click l-input i-tbeddel l-on dyalo */
+input[type="text"]:focus, 
+textarea:focus {
+    border-color: #4A90E2;
+    outline: none;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.2);
+}
+
+textarea {
+    height: 150px;
+    resize: none; /* Bach may-kherbjch l-user l-form */
+}
+
+/* Styling l-button "Update" */
+button[type="submit"] {
+    width: 100%;
+    background-color: #28a745; /* Loun khdar f l-update dima hsan */
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+    transform: translateY(-1px); /* Wahd l-effet sghir dyal t-tle3 */
+}
+
+/* Responsive: f tilifun t-ban mzyana */
+@media (max-width: 480px) {
+    form {
+        width: 90%;
+        padding: 1.5rem;
+    }
+}

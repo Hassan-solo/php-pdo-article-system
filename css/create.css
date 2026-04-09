@@ -1,0 +1,80 @@
+/* Styling l-body bach i-kun kulchi m-centrer */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Styling dyal l-container dyal l-form */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Styling l-inputs w l-textarea */
+input[type="text"], 
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box; /* bach l-padding may-khrejch 3la l-width */
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* ila derti click bach t-kteb */
+input[type="text"]:focus, 
+textarea:focus {
+    border-color: #007bff;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical; /* bach user i-qder i-towlha ghir l-teht */
+}
+
+/* Styling l-button */
+button[type="submit"] {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Styling l-link li l-teht */
+div {
+    text-align: center;
+    margin-top: 20px;
+}
+
+div a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+div a:hover {
+    color: #007bff;
+}
