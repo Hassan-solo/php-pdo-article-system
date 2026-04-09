@@ -37,7 +37,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <h2>B-Pfe</h2>
         <nav>
             <a href="index.php">Home</a>
-            <a href="#task">Article</a>
             <a href="create.php" class="add_article">Add Article</a>
         </nav>
 

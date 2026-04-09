@@ -113,7 +113,7 @@ $articles = $article->readAll();
 
                 <div class="card-content">
 
-                    <h3><?= htmlspecialchars($art['title']) ?></h3>
+                    <h3>📚<?= htmlspecialchars($art['title']) ?></h3>
 
                     <p>
                         <?= htmlspecialchars($art['content']) ?>
@@ -126,7 +126,7 @@ $articles = $article->readAll();
                         <a href="delete.php?id=<?= $art['id'] ?>"
                             class="btn delete"
                             onclick="return confirm('Are you sure?')">
-                            Delete
+                            <i class="fa-solid fa-trash"></i>
                         </a>
 
                     </div>
